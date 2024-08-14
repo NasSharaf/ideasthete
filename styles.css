@@ -1,0 +1,762 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;600;700&display=swap");
+
+body {
+    background: black;
+    font-family: "GillSans-Light","Gill Sans","Gill Sans MT",Calibri,sans-serif;
+    color: whitesmoke;
+    word-wrap: break-word;
+    display: block;
+    flex-direction: column;
+    max-width: 40rem;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .25em;
+    padding-right: .25em;
+}
+k
+h1 {
+    font-family: 'Palatino Linotype', serif;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+h2 {
+    font-family: 'Palatino Linotype', serif;
+    font-style: italic;
+}
+
+.header {
+    font-family: 'Palatino Linotype', serif;
+    /* text-align: right; */
+}
+
+hr {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid #222;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    max-height: 800px;
+}
+
+.icon{
+  height: 100%;
+  cursor: pointer;
+  margin: 0 10px;
+  display: inline-block;
+  color: white;
+}
+
+.bannercover {
+  width: 100%; /* width of container */
+  height: 400px; /* height of container */
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* GENERAL TABS*/
+.gator-tabs-container{
+  /* display: flex; */
+  flex-direction: column;
+  width:100%;
+}
+
+.gator-tabs-header {
+  color: #666;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0em 1em 0em 0;
+  transition: 0.3s;
+  text-decoration: none;
+  font-family: 'Palatino Linotype', serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.gator-tabs-header > li {
+  color: #666;
+  cursor: pointer;
+  flex-grow: 1;
+  padding:.375rem;
+  font-size:1.125rem;
+  list-style: none;
+}
+
+/* Change background color of buttons on hover */
+.gator-tabs-header > li:hover {
+  background-color: #111;
+  color: white;
+}
+
+.gator-tabs {
+  width: 100%;
+  list-style: none;
+  margin: 10px 0px 0px -40px;
+}
+
+.gator-tab {
+  flex: 0%;
+  color:#fff;
+}
+
+/* EXPERIENCES TABS */
+.exp {
+  display: flex;
+}
+
+/* Style the tab */
+.exptab {
+  float: left;
+  background-color: #f1f1f1;
+  width: 25%;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.exptab button {
+  display: block;
+  color: #666;
+  background-color: black;
+  padding: 17px 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.exptab button:hover {
+  background-color: #111;
+  color: white;
+}
+
+/* Create an active/current "tab button" class */
+.exptab button.active {
+  color: snow;
+}
+
+/* Style the tab content */
+.exptabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 75%;
+  border-left: none;
+  min-height: 375px;
+}
+
+/* CARDS FOR EDUCATION */
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: rgba(25,25,25,0.8);
+    transition: 0.3s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(150,150,150,0.5);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.education_container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.Education {
+}
+
+.Education img{
+  /* max-height: 100px; */
+  max-width: 25%;
+  object-fit: cover;
+}
+
+/* CHIPS FOR CERTIFICATIONS */
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: rgba(25,25,25,0.8);   
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.chip_edu {
+  padding: 0 25px;
+  max-width: 40rem;
+  font-size: 16px;
+  border-radius: 25px;
+  background-color: rgba(25,25,25,0.8);   
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.chip_text_top {
+  padding: 5px 0px 0px 0px;
+  margin: 0;
+}
+
+.chip_text_bottom {
+  padding: 0px 0px 5px 0px;
+  margin: 0;
+}
+
+.chip:hover {
+    box-shadow: 0 4px 8px 0 rgba(150,150,150,0.5);
+}
+  
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.chip_edu img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* HONEYCOMB GRID FOR SKILLS */
+/* Hexagons */
+#hexGrid {
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.866% 0;
+    font-size: 15px;
+}
+  
+#hexGrid:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+  
+.hex {
+    position: relative;
+    list-style-type: none;
+    float: left;
+    overflow: hidden;
+    visibility: hidden;
+    outline: 1px solid transparent;  /* fix for jagged edges in FF on hover transition */
+    transform: rotate(-60deg) skewY(30deg) translatez(-1px);
+}
+  
+.hex * {
+    position: absolute;
+    visibility: visible;
+    outline: 1px solid transparent;  /* fix for jagged edges in FF on hover transition */
+}
+  
+.hexIn {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    transform: skewY(-30deg) rotate(60deg);
+}
+  
+  
+  /*** HEX CONTENT **********************************************************************/
+  
+  .hex img {
+    left: -100%;
+    right: -100%;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    background-color: rgba(25,25,25,0.8);
+  }
+  
+  .hex h1,
+  .hex p {
+    margin: 0;
+    width: 102%;
+    left: -1%;  /* prevent line on the right where background doesn't cover image */
+    padding: 5%;
+    box-sizing: border-box;
+    background-color: rgba(24, 24, 24, 0.8);
+    font-weight: 300;
+    transition: transform .2s ease-out, opacity .3s ease-out;
+  }
+  
+  .hex h1 {
+    bottom: 50%;
+    padding-top: 50%;
+    font-size: 1.5em;
+    z-index: 1;
+    transform: translateY(-100%) translatez(-1px);
+  }
+  
+  .hex h1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 10%;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .hex p {
+    top: 50%;
+    padding-bottom: 50%;
+    transform: translateY(100%) translatez(-1px);
+  }
+  
+  
+  /*** HOVER EFFECT  **********************************************************************/
+  
+  .hexIn:hover h1, .hexIn:focus h1, .hexIn:hover p, .hexIn:focus p {
+    transform: translateY(0%) translatez(-1px);
+  }
+  
+  
+  /*** SPACING AND SIZING *****************************************************************/
+  
+  @media (min-width:1201px) {  /* <- 2-3  hexagons per row */
+    .hex {
+      width: 32.666%;    /* = (100-2) / 3 */
+      padding-bottom: 37.720%;    /* =  width / sin(60) */
+    }
+    .hex:nth-child(5n+1),
+    .hex:nth-child(5n+2) {
+      transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    }
+    .hex:nth-child(5n+3),
+    .hex:nth-child(5n+4),
+    .hex:nth-child(5n+5) {
+      margin-top: -8.564%;
+      margin-bottom: -8.564%;
+    }
+    .hex:nth-child(5n+2),
+    .hex:nth-child(5n+4) {
+      margin-right: 1%;
+      margin-left: 1%;
+    }
+    .hex:nth-child(5n+1) {
+      margin-left: 0.5%;
+    }
+    .hex:nth-child(5n+3),
+    .hex:nth-child(5n+6) {
+      clear: left;
+    }
+  }
+  
+  @media (max-width: 1200px) {  /* <- 1-2  hexagons per row */
+    .hex {
+      width: 49.5%;    /* = (100-1) / 2 */
+      padding-bottom: 57.158%;    /* =  width / sin(60) */
+    }
+    .hex:nth-child(3n+1) {
+      transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    }
+    .hex:nth-child(3n+2),
+    .hex:nth-child(3n+3) {
+      margin-top: -13.423%;
+      margin-bottom: -13.423%;
+    }
+    .hex:nth-child(3n+1) {
+      margin-left: 0.5%
+    }
+    .hex:nth-child(3n+3) {
+      margin-left: 1%;
+    }
+    .hex:nth-child(3n+2),
+    .hex:nth-child(3n+4) {
+      clear: left;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    #hexGrid {
+      font-size: 13px;
+    }
+  }
+  
+  /* End Hexagons */
+
+/* NAVBAR  */
+.topnav {
+    overflow: hidden;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.topnav button {
+  color: #666;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: .5em 1em .5em 0;
+  transition: 0.3s;
+  float: left;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-family: 'Old Standard TT', sans-serif;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/* Change background color of buttons on hover */
+.topnav button:hover {
+  background-color: #111;
+  color: white;
+}
+
+/* Create an active/current tablink class */
+.topnav button.active {
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+} 
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav button:not(:first-child) {display: none;}
+  .topnav button.icon {
+      float: right;
+      display: block;
+  }
+}
+  
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive button.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .topnav.responsive button {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+}
+
+.midnav {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.midnav button {
+color: #666;
+background-color: inherit;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 0 1em 0 0;
+transition: 0.3s;
+float: left;
+display: block;
+text-align: right;
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+}
+
+/* Change background color of buttons on hover */
+.midnav button:hover {
+background-color: #111;
+color: white;
+}
+
+/* Create an active/current tablink class */
+.midnav button.active {
+color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.midnav .icon {
+display: none;
+} 
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+.midnav button:not(:first-child) {display: none;}
+.midnav button.icon {
+    float: right;
+    display: block;
+}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+.midnav.responsive {position: relative;}
+.midnav.responsive button.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.midnav.responsive button {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}
+
+
+
+/* INSTAGRAM STYLE PROJECTS TILE */
+.post{
+  width: 100%;
+  height: auto;
+  background: rgb(0, 0, 0);
+  border: 1px solid rgba(219,219,219, .2);
+  margin-top: 40px;
+}
+
+.info{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px inherit;
+}
+
+.info .username{
+  width: auto;
+  font-weight: bold;
+  color: snow;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.info .options{
+  height: 10px;
+  cursor: pointer;
+}
+
+.info .user{
+  display: flex;
+  align-items: center;
+}
+
+.info .profile-pic{
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  background: none;
+}
+
+.info .profile-pic img{
+  border: none;
+}
+
+.post-image{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.post-content{
+  width: 100%;
+  padding: 20px;
+}
+
+.likes{
+  font-weight: bold;
+}
+
+.description{
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 20px;
+  padding-right: 30px;
+}
+
+.description span{
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.post-time{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+.action-btn{
+  width: 70px;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: rgb(0, 162, 255);
+  opacity: 0.5;
+}
+
+.reaction-wrapper{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin-top: -20px;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.reaction-wrapper .icon{
+  height: 25px;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.reaction-wrapper .icon.save{
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+/* SLIDESHOW FOR ART */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+

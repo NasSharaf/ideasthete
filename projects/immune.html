@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<img src="images/SolarStackFinal.jpg" alt="SolarStackFinal" id="cover" class="bannercover">
+
+<h1 class="header">SOLARSTACK</h1>
+
+<div>
+    <h3>Overview</h3>
+
+    <p>
+        The core idea was to create a "3D solar panel" to capture more light at a given time and thus generate more power.
+    </p>
+
+    <h3>The problem statement</h3>
+
+    <p>
+        Solar panels as they currently exist capture light along a 2D plane and are limited by a property called "insolation."
+        Insolation is the power in an area that is given off by the sun (or more generally, any light source). This is a fixed property. 
+        The insolation of the sun is 1040 W/m^2. This means that even with a 100% efficient solar panel, one could not ever generate more than 1040 W/m^2.
+    </p>
+
+    <p>
+        Light doesn't travel in two dimensions, though, it travels through space in three dimensions. 
+        What if we could take advantage of this? Hypothetically, we would be able to generate more energy with a smaller surface area. 
+    </p>
+
+    <h3>The proposed solution</h3>
+
+    <p>
+        The first issue with developing a "three-dimensional solar panel/solar cell" is that if you turn the panel parallel to a ray of light, the panel can not absorb any of the light. 
+        Thus, we need a method of redirecting the light to be perpendicular to the panel. 
+        In devices like iPads, Kindles and some laptops, there is a a portion of the device called a backlight. 
+        When you start your device up, it often gives a white screen. This is the backlight. 
+        This backlight is composed of a light guide and several LEDs.
+        The LEDs are actually only at the edges of the light guide. 
+        The light guide redirects the light perpendicular, out the face of the light guide, which is what illuminates the white start screen of a Kindle or iPad.
+        What if we used this for sunlight?  
+    </p>
+
+    <img src="images/LGPPanel.jpg" alt="LGP">
+    <img src="images/LGPPanel2.jpg" alt="LGP2">
+
+    <p>
+        While some sunlight does get through the light guide, it would be better if we could concentrate sunlight to hit the edge more directly. 
+        We used what is known as a "linear cylindrical lens." 
+        Much like a magnifying glass concentrates light to a point, linear cylindrical lenses concentrate light into a line.
+    </p>
+
+    <img src="images/Lenses.jpg" alt="LGP2">
+
+    <p>
+        Finally, we need an enclosure to hold all of these components together. 
+        For the sake of experimentation, we wanted to compare one flat solar panel, generating power as is commonly seen, against a stack of panels.
+        The surface area of the control solar panel should be the same as the surface area of linear lenses . This way, we can see which generates more power - the control panel or the solar stack.
+    </p>
+
+    <img src="images/LensPanelCompare.jpg" alt="LGP2">
+    <img src="images/SolarStackCompare.jpg" alt="LGP2">
+
+    <h3>Analysis</h3>
+    <h3>Conclusion</h3>
+</div>
+
+
+</body>
+</html> 
+
+<script src="app.js"></script> 
+<script>
+    document.getElementById("expDefaultOpen").click();
+</script>

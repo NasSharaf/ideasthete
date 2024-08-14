@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<img src="images/ConcordPomegranates.jpeg" alt="Nature" id="cover" class="bannercover"> 
+
+<h1 class="header">NASIR SHARAF</h1>
+
+
+<div class="gator-tabs-container">
+
+    <ul class="gator-tabs-header">
+        <li class="default-gator-tab">About</li>
+        <li>Resume/CV</li>
+        <li>Publications</li>
+        <li>Projects</li>
+    </ul>
+    <hr>
+
+    <ul class="gator-tabs">
+        <!-- ABOUT -->
+        <li class="gator-tabs-container">
+            <ul class="gator-tabs-header midnav">
+                <li class="default-gator-tab">Bio</li>
+                <li>Stats</li>
+                <li>Now</li> 
+                <li>Contact</li>
+            </ul>
+            <hr>
+            <ul class="gator-tabs">
+                <!-- BIO -->
+                <li class="gator-tab">
+                    <p>My name is Nasir Sharaf. I am a maker, hacker, engineer and developer.</p>
+
+                    <p>I graduated from the University of Pittsburgh with a bachelors in mechanical engineering. 
+                    Around this time I had an internship with DTE Energy. 
+                    Because of that internship, I was hired by Siemens Building Technologies as an Energy Engineer where I learned a lot about controls, energy conservation, and construction.
+                    I also realized how important computers were becoming and how much untapped potential there was even in a high-tech industry like controls. 
+                    So I went and got my masters in computer science from Oakland University. 
+                    Most of my research was in the cybersecurity of industrial control systems. </p>
+                    
+                    <p>This website is meant to be a personal space. I often find that I am told how to do things or what to do, so I want a space with total freedom to say and do as I please. 
+                        Consequently, not everything on this site will be polished or complete. While I hope I might get a job opportunity or make a new contact through this site, that's not the goal and not the intended audience. 
+                        Regardless, I hope you find something interesting here. 
+                    </p>
+                </li>
+                <!-- STATS -->
+                <li class="gator-tab">
+                    <p>
+                        I don't believe we should reduce anyone to just a number, however sometimes numbers give context. 
+                        With that disclaimer in mind, here are some numbers that might give you an idea of who I am.
+                        (I do intend to add metrics like Leetcode and Kaggle, when I've devoted some time to those.)
+                    </p>
+                    <!-- <img src="Images/OCEANScore.png" height="240px" width="240px"> -->
+                    <p>
+                        GPAs:<br>
+                        Graduate:           3.89<br>
+                        Undergraduate:      3.25<br>
+                    </p>
+                    <p>
+                        OCEAN Score is: <br>
+                        openness to experience: 92/100<br>
+                        conscientiousness:      63/100<br>
+                        extraversion:           33/100<br>
+                        agreeableness:          58/100<br>
+                        negative emotionality:  46/100<br>
+                    </p>
+                    <p>
+                        Myers-Briggs:        INTP<br>
+                    </p>
+                    <!-- Kaggle -->
+                    <!-- LeetCode, Hackerrank -->
+                </li>
+                <!-- NOW -->
+                <li class="gator-tab">
+                    <p>NOW NOW NOW</p>
+                    <p>This will eventually connect to Spotify, Goodreads, etc APIs to give a sense of what I'm interested in at the moment.</p>
+                    <p>What I'm listening to</p>
+                    <p>What I'm reading</p>
+                    <p>What I'm watching</p>
+                    <p>What I'm making</p>
+                </li>
+                <!-- CONTACT -->
+                <li class="gator-tab">
+                    <p>Email me at nsrsharaf7 [at] gmail.com</p>
+                </li>
+            </ul>
+        </li>
+
+        <li class="gator-tabs-container">
+                <ul class="gator-tabs-header">
+                    <li class="default-gator-tab">Experiences</li>
+                    <li>Education</li>
+                    <li>Certifications</li>
+                    <li>Skills</li>
+                </ul>
+                <hr>
+                <ul class="gator-tabs">
+                    <!-- EXPERIENCE -->
+                    <li class="gator-tab">
+                        <div class="exp">
+                            <div class="exptab">
+                                <button class="exptablinks" onclick="openExpTab(event, 'generalmotors')" id="expDefaultOpen">General Motors</button>
+                                <button class="exptablinks" onclick="openExpTab(event, 'theiascientific')">Theia Scientific</button>
+                                <button class="exptablinks" onclick="openExpTab(event, 'energysciences')">Energy Sciences</button>
+                                <button class="exptablinks" onclick="openExpTab(event, 'oakland')">Oakland University</button>
+                                <button class="exptablinks" onclick="openExpTab(event, 'siemens')">Siemens</button>
+                                <button class="exptablinks" onclick="openExpTab(event, 'dte')">DTE Energy</button>
+                                <button class="exptablinks" onclick="openExpTab(event, 'pitt')">University of Pittsburgh</button>
+                            </div>
+
+                            <div id="generalmotors" class="exptabcontent">
+                                <h4>
+                                    <span>Software Developer Engineer</span>
+                                    <span class="company">&nbsp;@&nbsp;<a href="https://energysciencesllc.com" class="inline-link">Theia Scientific</a></span>
+                                </h4>
+                                <p class="range">June 2022 - Present</p>
+                                <div>
+                                    <ul>
+                                    <li>
+                                        Developed software for General Motors as a contractor via Akkodis Staffing                                    </li>
+                                    <li>
+                                        Using C++ and Python to develop in an embedded systems environment on
+                                        driver assisted/autonomous vehicles as part of the connected vehicles research
+                                        and development group                                    
+                                    </li>
+                                    <li>
+                                        Updating, maintaining, and refactoring high definition localizer module (HDLM)
+                                        and developing features for crowdsourced map and map over the air (MOTA) 
+                                        applications for SuperCruise                                             
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="theiascientific" class="exptabcontent">
+                                <h4>
+                                    <span>Software Developer Engineer</span>
+                                    <span class="company">&nbsp;@&nbsp;<a href="https://energysciencesllc.com" class="inline-link">Theia Scientific</a></span>
+                                </h4>
+                                <p class="range">September 2021 - March 2022</p>
+                                <div>
+                                    <ul>
+                                    <li>
+                                        Provided automated workflows and machine learning solutions for labratory and research scale microscopy
+                                    </li>
+                                    <li>
+                                        Used the Nvidia Jetson Nano to create a cloudless hosting of pytorch powered machine learning models. 
+                                    </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <div id="energysciences" class="exptabcontent">
+                                <h4>
+                                    <span>Data Science Internship</span>
+                                    <span class="company">&nbsp;@&nbsp;<a href="https://energysciencesllc.com" class="inline-link">Energy Sciences</a></span>
+                                </h4>
+                                <p class="range">May 2021 - August 2021</p>
+                                <div>
+                                    <ul>
+                                    <li>Used PowerBI and SQL to query datasets and provide internal data
+                                    visualizations on customer and market engagement</li>
+                                    <li>Performed exploratory data analysis to gather insights for marketing and strategy
+                                    teams</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <div id="oakland" class="exptabcontent">
+                                <h4>
+                                    <span>Graduate Research Assistant</span>
+                                    <span class="company">&nbsp;@&nbsp;<a href="https://www.oakland.edu" class="inline-link">Oakland University</a></span>
+                                </h4>
+                                <p class="range">September 2019 - May 2021</p>
+                                <div>
+                                    <ul>
+                                    <li>Conducted cybersecurity research in malware in industrial controls systems, worked with equipment like Siemens S7-1500 PLCs, GE PACSystems RX3i PLCs, and Schweitzer Engineering SEL-3555 Controllers</li>
+                                    <li>Used Metasploit and ICSsploit to test publicly disclosed vulnerabilities on testbed and captured network traffic using Wireshark</li>
+                                    <li>Developed a physical ontology-based intrusion detection system (POBIDS) to capture malware targeting industrial hardware and published findings</li>
+                                    <li>Currently developing an artificial immune system to optimize machine learning techniques for network intrusion detection</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <div id="siemens" class="exptabcontent">
+                                <h4>
+                                    <span>Associate Energy Engineer</span>
+                                    <span class="company">&nbsp;@&nbsp;<a href="https://www.siemens.com" class="inline-link">Siemens</a></span>
+                                </h4>
+                                <p class="range">July 2016 - August 2019</p>
+                                <div>
+                                    <ul>
+                                    <li>Performed Utility Data Analyses (UDA), Energy Star Benchmarking, Energy Audits, Monitor Based Commissioning (MBCx), and Air Handler Retro-Commissioning (RCx) for the Midwest zone</li>
+                                    <li>Drafted and provided submittal drawings for Siemens Demand Flow Chiller Optimization and Siemens Green Labs projects. Largest single project valued at $775,000</li>
+                                    <li>Prepared submittals for systems level controls and bid documents for solutions construction projects as part of the Design Team, including parts sizing, specifications review, and custom drawing requests</li>
+                                    <li>Operations Development Program (ODP) in the Building Technologies division (BT), which provided year-long training in energy engineering, sales, and system controls basics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <div id="dte" class="exptabcontent">
+                                <h4>
+                                    <span>Engineering Co-op</span>
+                                    <span class="company">&nbsp;@&nbsp;<a href="https://www.dteenergy.com" class="inline-link">DTE Energy</a></span>
+                                </h4>
+                                <p class="range">January 2014 - August 2015</p>
+                                <div>
+                                    <ul>
+                                    <li>Under the Major Enterprise Projects division, coordinated with the City of Detroit’s Public Lighting Authority (PLA) to provide public street lighting to Detroit.</li>
+                                    <li>Surveyed area for new Redwings stadium by noting place and type of streetlight in a large neighborhood of Detroit and presenting findings to Departmental Supervisor</li>
+                                    <li>Worked with the Gas Systems Planning group to optimize and streamline gas operations by updating gas systems model with current market demands</li>
+                                    <li>Worked with the Michcon Gas Operations Continuous Improvement (CI) group to identify, diagnose, and correct defects such as optimizing staking processes, organizing computer training, streamlining staking reports, and creating a staking database</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    
+                            <div id="pitt" class="exptabcontent">
+                                <h4>
+                                    <span>Undergraduate Research Assistant</span>
+                                    <span class="company">&nbsp;@&nbsp;<a href="https://www.pitt.edu" class="inline-link">University of Pittsburgh</a></span>
+                                </h4>
+                                <p class="range">September 2012 - April 2015</p>
+                                <div>
+                                    <p>Department of Mechanical Engineering and Materials (Sciences November 2014 – April 2015)</p>
+                                    <ul>
+                                    <li>Created models and teaching materials of heat pipe technology for High School level classroom demonstrations</li>
+                                    </ul>
+                                    <p>Department of Pharmacology and Chemical Biology (September 2012 – December 2013)</p>
+                                    <ul>
+                                    <li>Studied the physiological effects of various drugs on the slow baseline contractions of the bladder by conducting strip surgeries and assisted in experimental setups, presented findings at the Honors College Undergraduate Research Fair 2013</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- EDUCATION -->
+                    <li class="gator-tab">
+                        
+                        <p class="Education">
+                            <div class="chip_edu">
+                                <img src="Images/OULogo3.jpg" alt="" width="50" height="50">
+                                <p class="chip_text_top">Master's of Science in Computer Science</p>
+                                <p class="chip_text_bottom">Oakland University, Rochester Hills, MI</p>
+                            </div> 
+                        
+                            <div class="chip_edu">
+                                <img src="Images/PittLogo2.jpg" alt="" width="50" height="50">
+                                <p class="chip_text_top">Bachelor's of Science in Mechanical Engineering </p>
+                                <p class="chip_text_bottom">University of Pittsburgh, Pittsburgh, PA</p>
+                            </div> 
+                        </p>
+
+                    </li>
+                    <!-- CERTIFICATIONS -->
+                    <li class="gator-tab">
+                        <div class="chip">
+                            <img src="Images/CEMLogo.png" alt="" width="96" height="96">
+                            Certified Energy Manager
+                        </div> 
+
+                        <div class="chip">
+                            <img src="Images/CEALogo.png" alt="" width="96" height="96">
+                            Certified Energy Auditor
+                        </div> 
+
+                        <div class="chip">
+                            <img src="Images/udacityLogo.png" alt="" width="96" height="96">
+                            Udacity Data Analyst Nanodegree
+                        </div>
+                    </li>
+                    <!-- SKILLS -->
+                    <li class="gator-tab">
+                        <div class="chip">
+                            <img src="Images/pythonlogo.png" alt="" width="96" height="96">
+                            Python
+                        </div>
+                        <div class="chip">
+                            <img src="Images/jslogo.jpg" alt="" width="96" height="96">
+                            JavaScript
+                        </div>  
+                        <div class="chip">
+                            <img src="Images/C++logo.png" alt="" width="96" height="96">
+                            C++
+                        </div>  
+                        <div class="chip">
+                            <img src="Images/matlablogo.jpg" alt="" width="96" height="96">
+                            Matlab
+                        </div> 
+                        <div class="chip">
+                            <img src="Images/autocadlogo.jpg" alt="" width="96" height="96">
+                            AutoCAD
+                        </div> 
+                        <div class="chip">
+                            <img src="Images/solidworkslogo.png" alt="" width="96" height="96">
+                            SolidWorks
+                        </div> 
+                        <div class="chip">
+                            <img src="Images/fusion360logo.jpg" alt="" width="96" height="96">
+                            Fusion360
+                        </div> 
+                    </li>
+                </ul>
+        </li>
+
+        <li class="gator-tab">
+            <p> K. G. Field, P. Patki, N. Sharaf, K. Sun, L. Hawkins, M. Lynch, R. Jacobs, D. D. Morgan, L. He, and C. R. Field, 
+                “Real-time, On-Microscope Automated Quantification of Features in Microcopy Experiments Using Machine Learning and Edge Computing,” 
+                Microscopy and Microanalysis, vol. 28, no. S1, pp. 2046–2048, 2022.
+            </p>
+            <hr class="divider">
+            <p> [Thesis] N. Sharaf, J. Olijnyk, B. Bond, and J. Rrushi, 
+                “An Artificial Immune System Enhanced Taint Analysis for Industrial Control Systems”, 
+            </p>
+            <hr class="divider">
+            <p> M. Yahya, N. Sharaf, J. Rrushi, H. Tay, B. Liu, and K. Xu, 
+                “Physics Reasoning for Intrusion Detection in Industrial Networks”, 
+                In Proceedings of The Second IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications, 
+                Virtual, December 2020
+            </p>
+            <hr class="divider">
+            <p> Sharaf, Nasir. “It’s All Part of the Plan” TechCentury, vol. 24, no. 4, Winter 2020, pg. 12-13 </p>
+        </li>
+
+        <li class="gator-tabs-container">
+            <ul class="gator-tabs-header">
+                <li class="default-gator-tab">Software</li>
+                <li>Hardware</li>
+                <li>Artwork</li>
+                <li>Writings</li>
+            </ul>
+            <hr>
+            <ul class="gator-tabs">
+
+                <!-- SOFTWARE -->
+                <li class="gator-tab">
+                    <ul id="hexGrid">
+                        <li class="hex">
+                            <a class="hexIn" href="projects/Rashomon.html">
+                            <img src="Images/newsbetting.jpg" alt="python logo" />
+                            <h1>Rashomon</h1>
+                            <p>A Newsbetting Site</p>
+                            </a>
+                        </li>
+                
+                        <li class="hex">
+                            <a class="hexIn" href="#">
+                            <img src="Images/ImmuneSystem.jpg" alt="JS logo" />
+                            <h1>ICSAIS</h1>
+                            <p>An Artificial Immune System</p>
+                            </a>
+                        </li>
+                
+                        <li class="hex">
+                            <a class="hexIn" href="#">
+                            <img src="Images/physicsbased.jpg" alt="" />
+                            <h1>POBIDS</h1>
+                            <p>Physics Based Intrusion Detection</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- HARDWARE -->
+                <li class="gator-tab">
+                    <ul id="hexGrid">
+                        <li class="hex">
+                            <a class="hexIn" href="projects/solarstack.html">
+                            <img src="Images/SolarPanelv7.png" alt="solarstack" />
+                            <h1>Solarstack</h1>
+                            <p>A 3D solar cell array</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- ARTWORK -->
+                <li class="gator-tab">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                        <img src="images/Arrowheads.JPG" alt="arrowheads">
+                        <div class="text">Arrowheads</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <img src="images/Balloons.JPG" alt="black balloons">
+                        <div class="text">Black Balloons</div>
+                        </div>
+                    
+                        <div class="mySlides fade">
+                        <img src="images/Flags.JPG" alt="flags">
+                        <div class="text">Black Flags</div>
+                        </div>
+                
+                        <div class="mySlides fade">
+                            <img src="images/Apples.JPG" alt="apples" class="pic">
+                            <div class="text">Apples</div>
+                        </div>
+                
+                        <div class="mySlides fade">
+                            <img src="images/Hearts.JPG" alt="heart grenades" class="pic">
+                            <div class="text">Heart Grenades</div>
+                        </div>
+                
+                        <div class="mySlides fade">
+                            <img src="images/Lightbulbs.JPG" alt="lightbulb brains" class="pic">
+                            <div class="text">Brainbulbs</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <img src="images/concordpomegranates.jpg" alt="concord pomegranates" class="pic">
+                            <div class="text">Concord Pomegranates</div>
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div> 
+                </li>
+
+                <!-- WRITING -->
+                <li class="gator-tab">
+                    <div class="chip_edu">
+                        <a href="writings/InamoratiAnonymous.html">
+                            <p class="chip_text_top">Inamorati Anonymous</p>
+                            <p class="chip_text_bottom">Fiction: Three short stories about addicts maintaining sobreity from love</p>
+                        </a>
+                    </div> 
+
+                    <div class="chip_edu">
+                        <a href="writings/DeepBiomimicry.html">
+                            <p class="chip_text_top">Deep Biomimicry</p>
+                            <p class="chip_text_bottom">Non-Fiction: How can we extend the idea of biomimicry even further?</p>
+                        </a>
+                    </div> 
+
+                    <div class="chip_edu">
+                        <a href="writings/DeterritorializationVerticalFarming.html">
+                            <p class="chip_text_top">Deterritorialization and Vertical Farming</p>
+                            <p class="chip_text_bottom">Non-Fiction: A discussion on the impacts of vertical farming</p>
+                        </a>
+                    </div> 
+                        
+                    <div class="chip_edu">
+                        <a href="writings/EcologyAsInfrastructure.html">
+                            <p class="chip_text_top">Ecology as Infrastructure</p>
+                            <p class="chip_text_bottom">Non-Fiction: Reconsidering ecology's role on mankind</p>
+                        </a>
+                    </div> 
+
+                    <div class="chip_edu">
+                        <a href="writings/FeelingOld.html">
+                            <p class="chip_text_top">I Feel Old</p>
+                            <p class="chip_text_bottom">Non-Fiction: A little personal essay when I was in my feels</p>
+                        </a>
+                    </div> 
+
+                    <div class="chip_edu">
+                        <a href="writings/MoneyMoralMask.html">
+                            <p class="chip_text_top">Money And the Moral Mask</p>
+                            <p class="chip_text_bottom">Non-Fiction: A thought on money and morality</p>
+                        </a>
+                    </div> 
+
+                    <div class="chip_edu">
+                        <a href="writings/PersonalLanguage.html">
+                            <p class="chip_text_top">Personal Language</p>
+                            <p class="chip_text_bottom">Non-Fiction: Would language lose meaning if there was only one speaker?</p>
+                        </a>
+                    </div> 
+
+                    <div class="chip_edu">
+                        <a href="writings/PhysicsAndMetaphysicsOfTime.html">
+                            <p class="chip_text_top">The Physics and Metphysics of Time</p>
+                            <p class="chip_text_bottom">Non-Fiction: A thought experiment on the relationship between time and information</p>
+                        </a>
+                    </div> 
+
+                    <div class="chip_edu">
+                        <a href="writings/SupermanAndPhilosophy.html">
+                            <p class="chip_text_top">Supermand And Philosophy</p>
+                            <p class="chip_text_bottom">Fiction: A short story about superman and Philosophy</p>
+                        </a>
+                    </div> 
+                </li>
+
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html> 
+
+<script src="app.js"></script> 
+<script>
+    document.getElementById("expDefaultOpen").click();
+</script>
